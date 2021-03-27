@@ -1,0 +1,16 @@
+Z:\Documents\Non-School coding\paper-chatlog-parser\parsethepapers\bin\Debug\net5.0\parsethepapers.exe
+Z:\Documents\Non-School coding\paper-chatlog-parser\parsethepapers\bin\Debug\net5.0\parsethepapers.deps.json
+Z:\Documents\Non-School coding\paper-chatlog-parser\parsethepapers\bin\Debug\net5.0\parsethepapers.runtimeconfig.json
+Z:\Documents\Non-School coding\paper-chatlog-parser\parsethepapers\bin\Debug\net5.0\parsethepapers.runtimeconfig.dev.json
+Z:\Documents\Non-School coding\paper-chatlog-parser\parsethepapers\bin\Debug\net5.0\parsethepapers.dll
+Z:\Documents\Non-School coding\paper-chatlog-parser\parsethepapers\bin\Debug\net5.0\ref\parsethepapers.dll
+Z:\Documents\Non-School coding\paper-chatlog-parser\parsethepapers\bin\Debug\net5.0\parsethepapers.pdb
+Z:\Documents\Non-School coding\paper-chatlog-parser\parsethepapers\obj\Debug\net5.0\parsethepapers.csprojAssemblyReference.cache
+Z:\Documents\Non-School coding\paper-chatlog-parser\parsethepapers\obj\Debug\net5.0\parsethepapers.GeneratedMSBuildEditorConfig.editorconfig
+Z:\Documents\Non-School coding\paper-chatlog-parser\parsethepapers\obj\Debug\net5.0\parsethepapers.AssemblyInfoInputs.cache
+Z:\Documents\Non-School coding\paper-chatlog-parser\parsethepapers\obj\Debug\net5.0\parsethepapers.AssemblyInfo.cs
+Z:\Documents\Non-School coding\paper-chatlog-parser\parsethepapers\obj\Debug\net5.0\parsethepapers.csproj.CoreCompileInputs.cache
+Z:\Documents\Non-School coding\paper-chatlog-parser\parsethepapers\obj\Debug\net5.0\parsethepapers.dll
+Z:\Documents\Non-School coding\paper-chatlog-parser\parsethepapers\obj\Debug\net5.0\ref\parsethepapers.dll
+Z:\Documents\Non-School coding\paper-chatlog-parser\parsethepapers\obj\Debug\net5.0\parsethepapers.pdb
+Z:\Documents\Non-School coding\paper-chatlog-parser\parsethepapers\obj\Debug\net5.0\parsethepapers.genruntimeconfig.cache
