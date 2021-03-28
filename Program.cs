@@ -53,6 +53,7 @@ namespace Parsethepapers
                 while ((line = sr.ReadLine()) != null){
                     index = line.IndexOf("INFO]:");
                     if (ContainsCommand(privateMessageCommands, line) || ContainsCommand(replyCommands, line)) {
+                        // Add message in here
                     } else if (ContainsLogin(line)){
                         username = line.Substring(index+7, line.IndexOf("[", index+7)-(index+7));
                         Console.WriteLine("LOG ON " + username);
