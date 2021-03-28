@@ -47,14 +47,25 @@ namespace Parsethepapers
             string[] replyCommands = {"r", "er", "reply", "ereply"};
             
             using (StreamReader sr = new StreamReader("./logs.txt")) {
+                int index;
+                string username;
                 string line;
                 while ((line = sr.ReadLine()) != null){
+                    index = line.IndexOf("INFO]:");
                     if (ContainsCommand(privateMessageCommands, line) || ContainsCommand(replyCommands, line)) {
 //                        Console.WriteLine(line);
                     } else if (ContainsLogin(line)){
-                        Console.WriteLine(line);
+                        username = line.Substring(index+7, line.IndexOf("[", index+7)-(index+7));
+                        Console.WriteLine("LOG ON " + username);
+//                        Console.WriteLine(line);
                     } else if (ContainsLogoff(line)){
-                        Console.WriteLine(line);
+                        username = line.Substring(index+7, line.IndexOf(" ", index+7)-(index+7));
+                        if (username.StartsWith("com.mojang.authlib")){
+                            username = line.Substring(
+                                line.IndexOf("name=")+5, 
+                                line.IndexOf(",properties")-(line.IndexOf("name=")+5));
+                        }
+                        Console.WriteLine("LOG OFF " + username);
                     }
                 }
             }
