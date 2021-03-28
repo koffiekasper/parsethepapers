@@ -47,6 +47,7 @@ namespace Parsethepapers
             string[] replyCommands = {"r", "er", "reply", "ereply"};
             
             using (StreamReader sr = new StreamReader("./logs.txt")) {
+                OnlinePlayers PlayerList = new OnlinePlayers();
                 int index;
                 string username;
                 string line;
@@ -56,7 +57,8 @@ namespace Parsethepapers
                         // Add message in here
                     } else if (ContainsLogin(line)){
                         username = line.Substring(index+7, line.IndexOf("[", index+7)-(index+7));
-                        Console.WriteLine("LOG ON " + username);
+                        //Console.WriteLine("LOG ON " + username);
+                        PlayerList.PlayerJoins(username);
                     } else if (ContainsLogoff(line)){
                         username = line.Substring(index+7, line.IndexOf(" ", index+7)-(index+7));
                         if (username.StartsWith("com.mojang.authlib")){
@@ -64,7 +66,8 @@ namespace Parsethepapers
                                 line.IndexOf("name=")+5, 
                                 line.IndexOf(",properties")-(line.IndexOf("name=")+5));
                         }
-                        Console.WriteLine("LOG OFF " + username);
+//                        Console.WriteLine("LOG OFF " + username);
+                        PlayerList.PlayerLeaves(username);
                     }
                 }
             }
